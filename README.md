@@ -8,6 +8,22 @@ This project implements polynomial linear regression from scratch in Python usin
 - Stochastic gradient descent (SGD)
 - Visualizations and analysis in a Jupyter notebook
 
+### 📈 Locally Weighted Linear Regression (Bonus Visualization)
+
+This project also explores **Locally Weighted Linear Regression (LWLR)**, a non-parametric algorithm that fits a linear model around each query point using a Gaussian kernel to assign weights to nearby training samples.
+
+The plot below shows how different values of the bandwidth parameter `τ` affect the model's flexibility and smoothness:
+
+![Locally Weighted Linear Regression](images/Hyperparameters_Weighted_Regression.png)
+
+- **Dashed Gray Line**: Traditional linear regression (OLS), which fits a single global model to all data points.
+- **Colored Curves**: LWLR fits for different `τ` values:
+  - `τ = 0.1` and `τ = 0.3` (red, orange): Capture local patterns with high flexibility but can be sensitive to noise.
+  - `τ = 0.8` and `τ = 2.0` (green, blue): Provide a balance between smoothness and flexibility.
+  - `τ = 10.0` (pink): Approximates global linear regression as the kernel becomes too broad to detect local variations.
+
+This visualization highlights how LWLR dynamically adapts to data structure by adjusting the effective model complexity through `τ`.
+
 ## 📁 Files
 
 - `linear_regression.py`: Core implementation of data loading, feature generation, training objective, and optimization methods.
