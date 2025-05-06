@@ -64,7 +64,7 @@ def stochastic_gradient_descent(
             #                        END OF YOUR CODE                         #
             ###################################################################
             # check whether all w is 0.0
-            assert np.any(w != 0.0), "You are asked to update w properly"
+            assert np.any(w != 0.0)
 
         objective = compute_objective(X_train, y_train, w)
         train_objective_list.append(objective)
