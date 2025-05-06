@@ -14,7 +14,7 @@ This project also explores **Locally Weighted Linear Regression (LWLR)**, a non-
 
 The plot below shows how different values of the bandwidth parameter `τ` affect the model's flexibility and smoothness:
 
-![Locally Weighted Linear Regression](images/Hyperparameters_Weighted_Regression.png)
+![Locally Weighted Linear Regression](Images/Hyperparameters_Weighted_Regression.png)
 
 - **Dashed Gray Line**: Traditional linear regression (OLS), which fits a single global model to all data points.
 - **Colored Curves**: LWLR fits for different `τ` values:
